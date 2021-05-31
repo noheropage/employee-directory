@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Col, Row, Button, Jumbotron } from "react-bootstrap";
+import { Card, Col, Row, Button, Jumbotron, Container } from "react-bootstrap";
 import API from "../utils/API";
 
 class EmployeeCard extends Component {
@@ -45,6 +45,7 @@ class EmployeeCard extends Component {
           <Jumbotron>
               <h1>Employee Directory</h1>
           </Jumbotron>
+          <Container>
         <Row>
           <Col>
             <Button onClick={filterGender} className="m-1">
@@ -62,6 +63,7 @@ class EmployeeCard extends Component {
             </Button>
           </Col>
         </Row>
+        </Container>
 
         <Row>
           {this.state.person.map((employees) => (
