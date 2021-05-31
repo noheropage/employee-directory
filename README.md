@@ -5,4 +5,4 @@ This bare-bones react-app shows what could be a functional employee directory. U
 Using a boiler-plate create-react-app, react-bootstrap, and axios, this app generates a new employee directory with each refresh. Additional filters, sorts, and other data manipulation can easily be implemented to get a data-set that works for different industries. 
 
 ## Screenshot
-![Screenshot](employee-directory/images/screenshot.jpg)
+![Screenshot](./images/screenshot.jpg)
