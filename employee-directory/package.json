@@ -15,9 +15,10 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://noheropage.github.io/employee-directory",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d main -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,7 +40,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://noheropage.github.io/employee-directory/employee-directory"
+    ]    
   }
 }
