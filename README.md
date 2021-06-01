@@ -6,3 +6,5 @@ Using a boiler-plate create-react-app, react-bootstrap, and axios, this app gene
 
 ## Screenshot
 ![Screenshot](./images/screenshot.jpg)
+
+[Link to deployed site](https://noheropage.github.io/employee-directory/)
