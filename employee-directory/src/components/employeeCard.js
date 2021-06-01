@@ -3,11 +3,13 @@ import { Card, Col, Row, Button, Jumbotron, Container } from "react-bootstrap";
 import API from "../utils/API";
 
 class EmployeeCard extends Component {
+  // establish state for a person array that can be manipulated by filter and sort functions and another array to hold unmanipulated data
   state = {
     person: [],
     personData: [],
   };
 
+  // api call when mounted
   async componentDidMount() {
     const { data } = await API.getRandomEmployee();
     this.setState({
@@ -20,12 +22,14 @@ class EmployeeCard extends Component {
   render() {
     const { person } = this.state;
     const { personData } = this.state;
-    // console.log(person);
+
+    // example for filter criteria
     const filterGender = () => {
       const gender = person.filter((employee) => employee.gender === "male");
       this.setState({ person: gender });
     };
 
+    // creates a copy of the array so original data won't be manipulated by .sort method
     const sortAge = () => {
       const age = []
         .concat(person)
@@ -36,6 +40,7 @@ class EmployeeCard extends Component {
       this.setState({ person: age });
     };
 
+    // undo the effects of the previous functions
     const reset = () => {
       this.setState({ person: personData });
     };
